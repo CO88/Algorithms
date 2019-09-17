@@ -8,7 +8,7 @@ public class Fibonacci {
 
     /**
      * 피보나치 수열을 구현한다.
-     * 최적으로 알고리즘을 작성한다.
+     * 최적으로 알고리즘을 작성한다. (중복계산 제거, 공간복잡도 1)
      * n는 몇번째까지의 피보나치 수열값을 구하는지에 대한 파라미터
      * 리턴값은 n까지의 피보나치 수열의 값이다.
      * @param n
@@ -21,7 +21,6 @@ public class Fibonacci {
             n2 = fibo(n-1);
             n1 = fibo(n-2);
             n3 = n2 + n1;
-            // System.out.println("n3 : " + n3 + ", n2 : " + n2 + ", n1 : " + n1 +", n : " + n);
             return n3;
         } else {
             // ex)  f(5)를 계산할때,f(5) = f(4) + f(3)인데,
