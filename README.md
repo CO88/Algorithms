@@ -1,3 +1,3 @@
 # Algorithms
 
-Repository for the algorithms you practice
+Repository for the algorithms i've practice
